@@ -42,7 +42,7 @@
    &kp GRAVE    &kp 1         &kp 2         &kp 3         &kp 4         &kp 5                 &kp 6    &kp 7    &kp 8   &kp 9   &kp 0  &kp LC(LA(DEL))
    &trans    &trans         &trans         &trans         &trans         &trans                 &trans    &trans    &trans   &trans   &trans  &trans
    &trans    &trans         &trans         &kp LPAR       &kp RPAR       &trans                 &trans    &kp LBKT  &kp RBKT &kp MINUS   &kp EQUAL  &trans
-   &trans    &trans         &trans         &trans         &trans         &trans                 &trans    &trans    &trans   &trans   &trans  &trans
+   &trans    &trans         &trans         &trans         &trans         &trans                 &trans    &trans    &trans   &trans   &trans  &kp RARW
                                   &kp LCTRL  &kp LALT  &kp LGUI              &kp SPACE  &mo 1   &kp LARW
                         >;
                 };
