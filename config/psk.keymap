@@ -4,6 +4,13 @@
 
 
 / {
+        conditional_layers {
+                compatible = "zmk,conditional-layers";
+                config_layer {
+                                                                        if-layers = <1 2>;
+                                                                        then-layer = <4>;
+                        };
+        };
         keymap {
                 compatible = "zmk,keymap";
 
@@ -28,7 +35,7 @@
 // |       |       |       |       |       |       |          |       |       |       |       |       |       |
                         bindings = <
 &trans   &kp F1    &kp F2         &kp F3         &kp F4         &trans         &trans    &trans    &trans   &trans   &trans  &trans
-   &trans &kp F5    &kp F6         &kp F7         &kp F8         &kp HOME         &kp LARW    &kp DARW    &kp UARW   &kp RARW   &kp RBKT  &kp BSLH
+   &trans &kp F5    &kp F6         &kp F7         &kp F8         &kp HOME         &trans &kp UNDER    &kp EQUAL   &kp LBRC   &kp RBRC  &kp BSLH
    &trans &kp F9    &kp F10         &kp F11         &kp F12       &kp END       &trans    &kp LBKT  &kp RBKT &kp MINUS   &kp EQUAL  &trans
    &trans &trans    &trans         &trans         &trans         &trans         &trans                 &trans    &trans    &trans   &trans   &trans  &trans
                                   &kp LCTRL  &kp LALT  &kp LGUI              &kp SPACE  &mo 1   &kp LARW
@@ -41,7 +48,7 @@
 // |       |       |       |       |       |       |          |       |       |       |       |       |       |
                         bindings = <
    &kp GRAVE    &kp N1         &kp N2         &kp N3         &kp N4         &kp N5                 &kp N6    &kp N7    &kp N8   &kp N9   &kp N0  &kp DEL
-   &bt BT_CLR    &bt BT_SEL 0         &bt BT_SEL 1         &bt BT_SEL 2         &bt BT_SEL 3         &bt BT_SEL 4                 &trans    &kp MINUS    &kp EQUAL   &kp LBKT   &kp RBKT  &trans
+   &trans    &trans         &trans         &trans         &trans         &trans                 &trans    &kp MINUS    &kp EQUAL   &kp LBKT   &kp RBKT  &kb BLSH
    &trans    &trans         &trans         &kp LPAR       &kp RPAR       &trans                 &trans    &kp LBKT  &kp RBKT &kp MINUS   &kp EQUAL  &trans
    &trans    &trans         &trans         &trans         &trans         &trans                 &trans    &trans    &trans   &trans   &trans  &kp RARW
                                   &kp LCTRL  &kp LALT  &kp LGUI              &kp SPACE  &mo 1   &kp LARW
@@ -55,6 +62,19 @@
                         bindings = <
    &kp GRAVE    &kp N1         &kp N2         &kp N3         &kp N4         &kp N5                 &kp N6    &kp KP_N7    &kp KP_N8   &kp KP_N9   &kp N0  &kp DEL
    &trans    &trans         &trans         &trans         &trans         &trans                 &trans    &kp KP_N4    &kp KP_N5   &kp KP_N6   &trans  &trans
+   &trans    &trans         &trans         &kp LPAR       &kp RPAR       &trans                 &trans    &kp KP_N1  &kp KP_N2 &kp KP_N3   &kp EQUAL  &trans
+   &trans    &trans         &trans         &trans         &trans         &trans                 &trans    &kp KP_N0    &kp DOT   &kp FSLH   &trans  &kp RARW
+                                  &kp LCTRL  &kp LALT  &kp LGUI              &kp SPACE  &mo 1   &kp LARW
+                        >;
+                };
+                config_layer {
+// |       |  BT1  |  BT2  |  BT3  |  BT4  |  BT5  |          |       |       |       |       |       | BTCLR |
+// |       |       |       |       |       |       |          |       |       |       |       |       |       |
+// |       |       |       | LPAR  | RPAR  |       |          |       | LBKT  | RBKT  |       |       |       |
+// |       |       |       |       |       |       |          |       |       |       |       |       |       |
+                        bindings = <
+   &kp GRAVE    &kp N1         &kp N2         &kp N3         &kp N4         &kp N5                 &kp N6    &kp KP_N7    &kp KP_N8   &kp KP_N9   &kp N0  &kp DEL
+   &bt BT_CLR    &bt BT_SEL 0         &bt BT_SEL 1         &bt BT_SEL 2         &bt BT_SEL 3         &bt BT_SEL 4                 &trans    &kp KP_N4    &kp KP_N5   &kp KP_N6   &trans  &trans
    &trans    &trans         &trans         &kp LPAR       &kp RPAR       &trans                 &trans    &kp KP_N1  &kp KP_N2 &kp KP_N3   &kp EQUAL  &trans
    &trans    &trans         &trans         &trans         &trans         &trans                 &trans    &kp KP_N0    &kp DOT   &kp FSLH   &trans  &kp RARW
                                   &kp LCTRL  &kp LALT  &kp LGUI              &kp SPACE  &mo 1   &kp LARW
