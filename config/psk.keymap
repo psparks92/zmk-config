@@ -38,7 +38,7 @@
    &trans &kp F5    &kp F6         &kp F7         &kp F8         &kp HOME         &trans &kp UNDER    &kp EQUAL   &kp LBRC   &kp RBRC  &kp BSLH
    &trans &kp F9    &kp F10         &kp F11         &kp F12       &kp END       &trans    &kp LBKT  &kp RBKT &kp MINUS   &kp EQUAL  &trans
    &trans &trans    &trans         &trans         &trans         &trans         &trans                 &trans    &trans    &trans   &trans   &trans  &trans
-                                  &kp LCTRL  &kp LALT  &kp LGUI              &kp SPACE  &mo 1   &kp LARW
+                                  &trans &trans &trans              &trans  &trans   &trans
                         >;
                 };
                 upper_layer {
