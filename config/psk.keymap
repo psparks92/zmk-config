@@ -11,6 +11,9 @@
                                                                         then-layer = <4>;
                         };
         };
+        &mt {
+                        tapping-term-ms = <100>;
+        };
         keymap {
                 compatible = "zmk,keymap";
 
@@ -25,7 +28,7 @@
    &kp ESC   &kp A     &kp S     &kp D      &kp F      &kp G                &kp H      &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
    &mt LSHIFT LPAR &kp Z     &kp X     &kp C      &kp V      &kp B                &kp N      &kp M   &kp COMMA  &kp DOT   &kp FSLH  &mt RSHIFT RPAR
    &kp LCTRL &kp LCTRL  &kp LGUI  &kp LALT  &mo 1 &lt 3 SPACE             &lt 3 SPACE  &kp LARW   &kp DARW   &kp UARW  &kp RARW  &kp RET
-                                  &mo 1  &kp SPACE  &mo 2              &mo 1  &kp SPACE   &mo 2 
+                                  &mo 1  &kp SPACE  &mo 3              &mo 1  &kp SPACE   &mo 2 
                         >;
                 };
                 lower_layer {
