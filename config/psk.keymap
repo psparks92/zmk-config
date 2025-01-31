@@ -37,7 +37,7 @@
 // |       |       |       | LPAR  | RPAR  |       |          |       | LBKT  | RBKT  |       |       |       |
 // |       |       |       |       |       |       |          |       |       |       |       |       |       |
                         bindings = <
-&PAUSE_BREAK   &kp F1    &kp F2         &kp F3         &kp F4         &trans         &trans    &trans    &trans   &trans   &trans  &kp DEL
+&kp PAUSE_BREAK   &kp F1    &kp F2         &kp F3         &kp F4         &trans         &trans    &trans    &trans   &trans   &trans  &kp DEL
    &trans &kp F5    &kp F6         &kp F7         &kp F8         &kp HOME         &trans &kp UNDER    &kp EQUAL   &kp LBRC   &kp RBRC  &kp BSLH
    &trans &kp F9    &kp F10         &kp F11         &kp F12       &kp END       &trans    &kp LBKT  &kp RBKT &kp MINUS   &kp EQUAL  &trans
    &trans &trans    &trans         &trans         &trans         &trans         &trans                 &trans    &trans    &trans   &trans   &trans  &trans
